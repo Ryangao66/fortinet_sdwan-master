@@ -5,6 +5,7 @@
 ====================================================================
 Security Fabric --- Fabric Connectors --- Other Fortinet Products --- FortiManager(红色) --- 右键Edit
 
+Security Fabric --- Fabric Connectors --- Central Managemnet --- 右键Edit   ###7.4.3b版本
 ====================================================================
 FortiManager Settings:
 
