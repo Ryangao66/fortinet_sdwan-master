@@ -1,0 +1,41 @@
+Device Manager --- Provisioning Templates --- BGP Template
+
+=================================================================================
+Branch1_BGP --- Edit
+
+=================================================================================
+
+Neighbors --- 192.168.191.253[VPN3] --- Edit
+
+------------------------------------------------------
+
+Route Map In --- enable --- [+]
+
+    Create New Route Map:
+
+        Name: set_no_export
+
+        Rules --- Create New
+
+                  ID: 1
+                  Action Permit
+                  Set Community --- enable --- no-export
+
+                  <OK>
+        <OK>
+
+<OK>
+
+=================================================================================
+
+
+===================部署===========================================================
+Device Manager --- Device & Groups --- Managed FortiGated
+
+=================================================================================
+Branch1 (勾选) --- Install --- Install Wizard ---
+                              Install Policy Package & Device Settings (勾选)
+                                                       Policy Package: Branch1_FW_Policy
+                                                                       --- Next
+                                                                       --- Next
+                                                                       --- Install
